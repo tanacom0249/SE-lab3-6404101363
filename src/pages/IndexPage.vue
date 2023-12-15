@@ -14,6 +14,14 @@
         lazy-rules
         :rules="[ val => val && val.length > 0 || 'กรุณาใส่ชื่อและนามสกุล']"
       />
+      <q-input
+        filled
+        v-model="name"
+        label="yourname *"
+        hint="Name and lastname"
+        lazy-rules
+        :rules="[ val => val && val.length > 0 || 'Please Enter your name and lastname ']"
+      />
 
       <q-input
         filled
